@@ -1,0 +1,19 @@
+@use "./helpers" as *;
+
+:root {
+  --color-bg: #0a0a0f;
+  --color-surface: #14141c;
+  --color-surface-hover: #1c1c26;
+  --color-white: #ffffff;
+  --color-text: #b4b4c0;
+  --color-text-muted: #7a7a88;
+  --color-accent: #9333ea;
+  --color-accent-secondary: #7c3aed;
+  --color-gradient: linear-gradient(135deg, var(--color-accent-secondary), var(--color-accent));
+  --color-border: #232330;
+  --container-width: #{$container-desktop-width}px;
+  --container-padding-x: clamp(20px, 4vw, 40px);
+  --font-family-base: 'Manrope', sans-serif;
+  --font-family-mono: 'JetBrainsMono', monospace;
+  --transition-duration: 0.3s;
+}
