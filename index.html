@@ -1,13 +1,114 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ильин Илья | Frontend Developer</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="/favicon.svg"
+  />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Ильин Илья | Frontend Developer</title>
+</head>
+<body>
+<header class="header">
+  <div class="header__inner container">
+    <a
+      href="#"
+      class="header__logo"
+      aria-label="Вверх"
+    >
+      <svg
+        class="header__logo-icon"
+        width="60"
+        height="32"
+        viewBox="0 0 60 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient
+            id="logo-gradient"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="100%"
+          >
+            <stop
+              offset="0%"
+              stop-color="#7c3aed"
+            />
+            <stop
+              offset="100%"
+              stop-color="#9333ea"
+            />
+          </linearGradient>
+        </defs>
+        <text
+          x="50%"
+          y="50%"
+          dominant-baseline="central"
+          text-anchor="middle"
+          font-family="'JetBrains Mono', monospace"
+          font-weight="400"
+          font-size="26"
+          fill="url(#logo-gradient)"
+        >[Ii]</text>
+      </svg>
+    </a>
+    <nav class="header__nav">
+      <a href="#about" class="header__link">Обо мне</a>
+      <a href="#skills" class="header__link">Навыки</a>
+      <a href="#projects" class="header__link">Проекты</a>
+      <a href="#contacts" class="header__link">Контакты</a>
+    </nav>
+
+      <button
+        class="theme-toggle"
+        type="button"
+        aria-label="Переключить тему"
+      >
+        <svg
+          class="theme-toggle__icon theme-toggle__icon--sun"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="12"
+            cy="12"
+            r="5"
+            stroke="currentColor"
+            stroke-width="2"
+          />
+          <path
+            d="M12 1v3M12 20v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M1 12h3M20 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <svg
+          class="theme-toggle__icon theme-toggle__icon--moon"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+  </div>
+</header>
+
+<script type="module" src="/src/main.js"></script>
+</body>
 </html>
