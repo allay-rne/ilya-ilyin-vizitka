@@ -1,0 +1,70 @@
+@use "../helpers" as *;
+
+.contacts {
+  padding: 80px 0;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+
+  &__title-text {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-text);
+  }
+
+  &__title-line {
+    width: 32px;
+    height: 2px;
+    background: var(--color-gradient);
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    background-color: var(--color-surface);
+    transition: border-color 0.3s ease;
+
+    @include hover {
+      border-color: var(--color-accent);
+    }
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    color: var(--color-accent);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__label {
+    font-size: 14px;
+    color: var(--color-text-muted);
+  }
+
+  &__value {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-white);
+  }
+}

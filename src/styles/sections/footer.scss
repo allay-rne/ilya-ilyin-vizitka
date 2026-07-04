@@ -1,0 +1,41 @@
+@use "../helpers" as *;
+
+.footer {
+  padding: 32px 0;
+  border-top: 1px solid var(--color-border);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+    font-size: 14px;
+    color: var(--color-text-muted);
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+    background-color: var(--color-surface);
+    color: var(--color-text);
+    cursor: pointer;
+    transition: border-color 0.3s ease, color 0.3s ease;
+
+    @include hover {
+      border-color: var(--color-accent);
+      color: var(--color-accent);
+    }
+  }
+
+  &__top-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
