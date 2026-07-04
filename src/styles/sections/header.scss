@@ -24,8 +24,8 @@
 
 .theme-toggle {
   position: relative;
-  width: 68px;
-  height: 34px;
+  width: 80px;
+  height: 40px;
   padding: 0;
   border: none;
   border-radius: 999px;
@@ -35,10 +35,10 @@
   &::before {
     content: '';
     position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 24px;
-    height: 24px;
+    top: 6px;
+    left: 6px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
     background: var(--color-gradient);
     transition: transform 0.3s ease;
@@ -47,19 +47,19 @@
   &__icon {
     position: absolute;
     top: 50%;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     color: var(--color-text-muted);
     transition: color 0.3s ease;
 
     &--sun {
-      left: 17px;
+      left: 20px;
       translate: -50% -50%;
       color: var(--color-white);
     }
 
     &--moon {
-      right: 17px;
+      right: 20px;
       translate: 50% -50%;
     }
   }

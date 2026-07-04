@@ -13,6 +13,7 @@
   />
   <title>Ильин Илья | Frontend Developer</title>
 </head>
+
 <body>
 <header class="header">
   <div class="header__inner container">
@@ -55,60 +56,141 @@
           font-weight="400"
           font-size="26"
           fill="url(#logo-gradient)"
-        >[Ii]</text>
+        >[Ii]
+        </text>
       </svg>
     </a>
     <nav class="header__nav">
-      <a href="#about" class="header__link">Обо мне</a>
-      <a href="#skills" class="header__link">Навыки</a>
-      <a href="#projects" class="header__link">Проекты</a>
-      <a href="#contacts" class="header__link">Контакты</a>
+      <a
+        href="#about"
+        class="header__link"
+      >Обо мне
+      </a>
+      <a
+        href="#skills"
+        class="header__link"
+      >Навыки
+      </a>
+      <a
+        href="#projects"
+        class="header__link"
+      >Проекты
+      </a>
+      <a
+        href="#contacts"
+        class="header__link"
+      >Контакты
+      </a>
     </nav>
 
-      <button
-        class="theme-toggle"
-        type="button"
-        aria-label="Переключить тему"
+    <button
+      class="theme-toggle"
+      type="button"
+      aria-label="Переключить тему"
+    >
+      <svg
+        class="theme-toggle__icon theme-toggle__icon--sun"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <svg
-          class="theme-toggle__icon theme-toggle__icon--sun"
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle
-            cx="12"
-            cy="12"
-            r="5"
-            stroke="currentColor"
-            stroke-width="2"
-          />
-          <path
-            d="M12 1v3M12 20v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M1 12h3M20 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-          />
-        </svg>
-        <svg
-          class="theme-toggle__icon theme-toggle__icon--moon"
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"
-            fill="currentColor"
-          />
-        </svg>
-      </button>
+        <circle
+          cx="12"
+          cy="12"
+          r="5"
+          stroke="currentColor"
+          stroke-width="2"
+        />
+        <path
+          d="M12 1v3M12 20v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M1 12h3M20 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+      </svg>
+      <svg
+        class="theme-toggle__icon theme-toggle__icon--moon"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"
+          fill="currentColor"
+        />
+      </svg>
+    </button>
   </div>
 </header>
 
-<script type="module" src="/src/main.js"></script>
+<main>
+  <section class="hero">
+    <div class="hero__inner container">
+      <div class="hero__content">
+        <span class="hero__badge">Привет!👋 Я</span>
+        <h1 class="hero__title">
+          Илья<br>
+          Ильин<span class="hero__title-dot">.</span>
+        </h1>
+        <p class="hero__role">Frontend Developer</p>
+        <p class="hero__subtitle">
+          Создаю современные и удобные веб-интерфейсы для людей
+        </p>
+        <div class="hero__actions">
+          <a
+            href="#projects"
+            class="btn btn--primary"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="currentColor"
+            >
+              <path d="m226-559 78 33q14-28 29-54t33-52l-56-11-84 84Zm142 83 114 113q42-16 90-49t90-75q70-70 109.5-155.5T806-800q-72-5-158 34.5T492-656q-42 42-75 90t-49 90Zm155-121.5q0-33.5 23-56.5t57-23q34 0 57 23t23 56.5q0 33.5-23 56.5t-57 23q-34 0-57-23t-23-56.5ZM565-220l84-84-11-56q-26 18-52 32.5T532-299l33 79Zm313-653q19 121-23.5 235.5T708-419l20 99q4 20-2 39t-20 33L538-80l-84-197-171-171-197-84 167-168q14-14 33.5-20t39.5-2l99 20q104-104 218-147t235-24ZM157-321q35-35 85.5-35.5T328-322q35 35 34.5 85.5T327-151q-25 25-83.5 43T82-76q14-103 32-161.5t43-83.5Zm57 56q-10 10-20 36.5T180-175q27-4 53.5-13.5T270-208q12-12 13-29t-11-29q-12-12-29-11.5T214-265Z" />
+            </svg>
+            Смотреть проекты
+          </a>
+          <a
+            href="#"
+            class="btn btn--secondary"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="currentColor"
+            >
+              <path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z" />
+            </svg>
+            Скачать резюме
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <img
+          src="/src/assets/images/laptop.png"
+          alt=""
+          class="hero__laptop"
+        >
+        <div class="hero__laptop-screen">
+          <span class="hero__typing"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script
+  type="module"
+  src="/src/main.js"
+></script>
 </body>
 </html>
