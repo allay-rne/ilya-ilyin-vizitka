@@ -11,6 +11,7 @@
   --color-accent: #9333ea;
   --color-accent-secondary: #7c3aed;
   --color-gradient: linear-gradient(135deg, var(--color-accent-secondary), var(--color-accent));
+  --color-gradient-vivid: linear-gradient(90deg, #a855f7, #ec4899, #7c3aed);
   --color-border: #232330;
   --container-width: #{$container-desktop-width}px;
   --container-padding-x: clamp(20px, 4vw, 40px);

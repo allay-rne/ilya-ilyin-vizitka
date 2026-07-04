@@ -17,6 +17,7 @@
   }
 
   &__content {
+    align-self: flex-start;
     max-width: 560px;
   }
 
@@ -40,13 +41,14 @@
 
   &__title {
     margin: 20px 0 0;
+    line-height: 1.1;
   }
 
   &__role {
     @include fluid-text(28, 20);
     margin: 4px 0 20px;
     font-weight: 700;
-    background: var(--color-gradient);
+    background: var(--color-gradient-vivid);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;

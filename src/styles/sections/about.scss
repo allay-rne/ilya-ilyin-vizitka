@@ -1,0 +1,95 @@
+@use "../helpers" as *;
+
+.about {
+  padding: 40px;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  background-color: var(--color-bg-darker);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  &__photo {
+    flex-shrink: 0;
+    width: 320px;
+  }
+
+  &__photo-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: scaleX(-1);
+    mask-image: radial-gradient(circle, black 60%, transparent 100%);
+    -webkit-mask-image: radial-gradient(circle, black 60%,transparent 100%);
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__title-text {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-text);
+  }
+
+  &__title-line {
+    width: 32px;
+    height: 2px;
+    background: var(--color-gradient);
+  }
+
+  &__text {
+    margin-top: 20px;
+    color: var(--color-text);
+  }
+
+  &__stats {
+    display: flex;
+    gap: 56px;
+    margin-top: 40px;
+  }
+
+  &__stat {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  &__stat-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__stat-icon {
+    width: 44px;
+    height: 44px;
+    color: var(--color-accent);
+  }
+
+  &__stat-value {
+    @include fluid-text(40, 28);
+    font-weight: 700;
+    background: var(--color-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  &__stat-label {
+    margin-left: 46px;
+    font-size: 16px;
+    color: var(--color-text-muted);
+  }
+}
