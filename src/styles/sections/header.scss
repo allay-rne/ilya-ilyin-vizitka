@@ -24,43 +24,41 @@
 
 .theme-toggle {
   position: relative;
-  width: 80px;
+  width: 40px;
   height: 40px;
   padding: 0;
   border: none;
-  border-radius: 999px;
-  background-color: var(--color-surface);
+  border-radius: 50%;
+  background: var(--color-gradient);
   cursor: pointer;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    background: var(--color-gradient);
-    transition: transform 0.3s ease;
-  }
 
   &__icon {
     position: absolute;
     top: 50%;
+    left: 50%;
+    translate: -50% -50%;
     width: 18px;
     height: 18px;
-    color: var(--color-text-muted);
-    transition: color 0.3s ease;
+    color: var(--color-white);
+  }
 
-    &--sun {
-      left: 20px;
-      translate: -50% -50%;
-      color: var(--color-white);
-    }
-
-    &--moon {
-      right: 20px;
-      translate: 50% -50%;
-    }
+  &__icon--sun {
+    opacity: 0;
   }
 }
+
+  [data-theme="light"] {
+    .theme-toggle {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+
+      &__icon--moon {
+        opacity: 0;
+      }
+
+      &__icon--sun {
+        opacity: 1;
+        color: var(--color-white);
+      }
+    }
+  }
