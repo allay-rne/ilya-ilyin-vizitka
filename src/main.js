@@ -1,3 +1,4 @@
 import '@a1rth/css-normalize'
 import './styles/index.scss'
 import '@/features/preloader.js'
+import '@/features/hero-typing.js'

@@ -86,8 +86,8 @@
 
   &__laptop-screen {
     position: absolute;
-    top: 20%;
-    left: 12%;
+    top: 18%;
+    left: 26%;
     width: 76%;
     height: 45%;
     padding: 16px;
@@ -95,6 +95,25 @@
     font-size: 13px;
     color: var(--color-accent);
     overflow: hidden;
+    white-space: pre;
+    transform: perspective(950px) rotateY(-40deg) rotateX(1deg) rotateZ(11.5deg);
+    transform-origin: left center;
+
+    .hl-keyword {
+      color: #c084fc;
+    }
+
+    .hl-string {
+      color: #f0abfc;
+    }
+
+    .hl-boolean {
+      color: #d8b4fe;
+    }
+
+    .hl-punctuation {
+      color: #a78bfa;
+    }
   }
 }
 

@@ -1,3 +1,5 @@
+import {typeScreen} from "@/features/hero-typing.js";
+
 export function typeText() {
   const textElement = document.querySelector('.preloader__text');
   const blockElement = document.querySelector('.preloader')
@@ -12,6 +14,7 @@ export function typeText() {
     } else {
       setTimeout(() => {
         blockElement.classList.add('preloader--hidden')
+        typeScreen()
       }, 1000)
     }
   }
