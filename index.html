@@ -64,7 +64,7 @@
         </text>
       </svg>
     </a>
-    <nav class="header__nav hidden-mobile">
+    <nav class="header__nav">
       <a
         href="#about"
         class="header__link"
@@ -129,27 +129,15 @@
       </svg>
     </button>
 
-    <button
-      class="burger visible-mobile"
-      type="button"
-      aria-label="Открыть меню"
-    >
-      <svg
-        class="burger__icon"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
+      <button
+        class="burger visible-mobile"
+        type="button"
+        aria-label="Открыть меню"
       >
-        <path
-          d="M3 6h18M3 12h18M3 18h18"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-        />
-      </svg>
-    </button>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
     </div>
   </div>
 </header>
@@ -202,7 +190,7 @@
         </div>
       </div>
 
-      <div class="hero__visual hidden-laptop-s">
+      <div class="hero__visual hidden-mobile">
         <img
           src="/src/assets/images/laptop.png"
           alt=""

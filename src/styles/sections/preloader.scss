@@ -1,12 +1,11 @@
 @use "../helpers" as *;
 
 .preloader {
+  @include flex-center;
+
   position: fixed;
   inset: 0;
   z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: var(--color-bg);
 
   &__text {

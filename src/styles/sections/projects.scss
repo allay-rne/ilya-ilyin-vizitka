@@ -50,8 +50,7 @@
 
     &::after {
       content: '';
-      position: absolute;
-      inset: 0;
+      @include abs-cover;
       background: linear-gradient(90deg, var(--color-surface) 0%, transparent 15%, transparent 85%, var(--color-surface) 100%);
       pointer-events: none;
     }

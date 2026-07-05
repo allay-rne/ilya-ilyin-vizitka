@@ -73,8 +73,8 @@
   }
 
   &__stat-icon {
-    width: 44px;
-    height: 44px;
+    @include square(44px);
+
     color: var(--color-accent);
   }
 
