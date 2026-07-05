@@ -125,4 +125,14 @@
     color: var(--color-text-muted);
     font-size: 14px;
   }
+
+  @include mobile {
+    &__card {
+      flex-direction: column;
+
+      &:nth-child(even) {
+        flex-direction: column;
+      }
+    }
+  }
 }

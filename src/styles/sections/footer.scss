@@ -38,4 +38,18 @@
     width: 20px;
     height: 20px;
   }
+
+  @include mobile-s {
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__copyright {
+      order: 3;
+      width: 100%;
+      text-align: center;
+      margin-top: 16px;
+    }
+  }
 }

@@ -20,6 +20,31 @@
   &__link {
     text-transform: uppercase;
   }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+.burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color-surface);
+  color: var(--color-white);
+  cursor: pointer;
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .theme-toggle {

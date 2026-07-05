@@ -115,6 +115,18 @@
       color: #a78bfa;
     }
   }
+
+  @include mobile-s {
+
+    &__inner {
+      justify-content: center;
+    }
+
+    &__actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
 }
 
 .btn {

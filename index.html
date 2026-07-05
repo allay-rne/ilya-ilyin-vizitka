@@ -64,7 +64,7 @@
         </text>
       </svg>
     </a>
-    <nav class="header__nav">
+    <nav class="header__nav hidden-mobile">
       <a
         href="#about"
         class="header__link"
@@ -86,7 +86,7 @@
       >Контакты
       </a>
     </nav>
-
+    <div class="header__actions">
     <button
       class="theme-toggle"
       type="button"
@@ -128,6 +128,29 @@
         />
       </svg>
     </button>
+
+    <button
+      class="burger visible-mobile"
+      type="button"
+      aria-label="Открыть меню"
+    >
+      <svg
+        class="burger__icon"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3 6h18M3 12h18M3 18h18"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+      </svg>
+    </button>
+    </div>
   </div>
 </header>
 
@@ -179,20 +202,23 @@
         </div>
       </div>
 
-      <div class="hero__visual">
+      <div class="hero__visual hidden-laptop-s">
         <img
           src="/src/assets/images/laptop.png"
           alt=""
           class="hero__laptop"
         >
-        <div class="hero__laptop-screen">
-          <span class="hero__typing" ></span>
+        <div class="hero__laptop-screen hidden-laptop-s">
+          <span class="hero__typing"></span>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="about reveal" id="about">
+  <section
+    class="about reveal"
+    id="about"
+  >
     <div class="about__inner container">
       <div class="about__photo">
         <img
@@ -282,7 +308,10 @@
     </div>
   </section>
 
-  <section class="skills reveal" id="skills">
+  <section
+    class="skills reveal"
+    id="skills"
+  >
     <div class="skills__inner container">
       <div class="skills__title">
         <span class="skills__title-text">Навыки</span>
@@ -341,7 +370,10 @@
     </div>
   </section>
 
-  <section class="projects reveal" id="projects">
+  <section
+    class="projects reveal"
+    id="projects"
+  >
     <div class="projects__inner container">
       <div class="projects__title">
         <span class="projects__title-text">Проекты</span>
@@ -433,7 +465,10 @@
     </div>
   </section>
 
-  <section class="contacts reveal" id="contacts">
+  <section
+    class="contacts reveal"
+    id="contacts"
+  >
     <div class="contacts__inner container">
       <div class="contacts__title">
         <span class="contacts__title-text">Контакты</span>

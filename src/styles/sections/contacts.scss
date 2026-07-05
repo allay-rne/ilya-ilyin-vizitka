@@ -67,4 +67,10 @@
     font-weight: 600;
     color: var(--color-white);
   }
+
+  @include mobile {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+  }
 }

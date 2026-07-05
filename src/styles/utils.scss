@@ -47,6 +47,18 @@
   }
 }
 
+.visible-mobile-s {
+  @include mobile-s-above {
+    display: none !important;
+  }
+}
+
+.hidden-mobile-s {
+  @include mobile-s {
+    display: none !important;
+  }
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(40px);
